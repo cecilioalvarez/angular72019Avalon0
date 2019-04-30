@@ -1,0 +1,12 @@
+<p *ngFor="let persona of listaPersonas" (mouseover)="personaSeleccionada=persona">
+  {{persona.nombre}}
+  {{persona.apellidos}}
+  {{persona.edad}}
+  </p>
+  -------------------------------
+  <p>La persona seleccionada es:
+    {{personaSeleccionada?.nombre}}
+    {{personaSeleccionada?.apellidos}}
+    {{personaSeleccionada?.edad}}
+
+  </p>
